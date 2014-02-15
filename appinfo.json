@@ -1,0 +1,69 @@
+{
+  "uuid": "2edff9df-4d60-47db-9962-437d40c5f1e2",
+  "shortName": "Tiny Bird",
+  "longName": "Tiny Bird",
+  "companyName": "StuartHa",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+    {
+      "type": "png",
+      "name": "IMAGE_20_DEG",
+      "file": "20_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_10_DEG",
+      "file": "10_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_0_DEG",
+      "file": "0_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_NEG_10_DEG",
+      "file": "neg_10_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_NEG_20_DEG",
+      "file": "neg_20_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_NEG_30_DEG",
+      "file": "neg_30_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_NEG_50_DEG",
+      "file": "neg_50_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_NEG_70_DEG",
+      "file": "neg_70_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_NEG_90_DEG",
+      "file": "neg_90_deg.png"
+    },
+    {
+      "type": "png",
+      "name": "IMAGE_GROUND",
+      "file": "ground.png"
+    }
+
+      ]
+  }
+}
