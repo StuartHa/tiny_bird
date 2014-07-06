@@ -26,7 +26,8 @@
     {
       "type": "png",
       "name": "IMAGE_0_DEG",
-      "file": "0_deg.png"
+      "file": "0_deg.png",
+      "menuIcon" : true
     },
     {
       "type": "png",
