@@ -28,9 +28,6 @@ char score_str[20];
 char best_score_str[20];
 bool unscore;
 
-static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
-}
-
 void beginning_stage_cb(void* p) {
   beginning_stage = false;
   tube_x1 = 144;
@@ -39,7 +36,7 @@ void beginning_stage_cb(void* p) {
   tube_y2 = 15 + rand() % 65;
 }
 
-static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
+static void button_click_handler(void) {
   if(title) {
     title = false;
     collision = false;
@@ -60,7 +57,16 @@ static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
   }
 }
 
+static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
+  button_click_handler();
+}
+
+static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
+  button_click_handler();
+}
+
 static void down_click_handler(ClickRecognizerRef recognizer, void *context) {
+  button_click_handler();
 }
 
 static void click_config_provider(void *context) {
@@ -83,7 +89,7 @@ void update_cb(Layer* layer, GContext* ctx) {
     graphics_draw_bitmap_in_rect(ctx, pos_20_deg, (GRect) {.origin = {10, 50}, .size = {30, 19}});
 
 
-    graphics_draw_text(ctx, "PRESS UP", fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD), (GRect) {.origin = {0,95}, .size = {144, 40}}, GTextOverflowModeWordWrap, GTextAlignmentCenter, NULL);
+    graphics_draw_text(ctx, "PRESS ANY BUTTON", fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD), (GRect) {.origin = {0,70}, .size = {144, 40}}, GTextOverflowModeWordWrap, GTextAlignmentCenter, NULL);
   
     graphics_draw_bitmap_in_rect(ctx, ground, (GRect) {.origin = {0, 158}, .size = {170, 10}});
     if(best_score > 0) {
