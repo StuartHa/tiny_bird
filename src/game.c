@@ -41,6 +41,7 @@ void game_up_click_handler(ClickRecognizerRef recognizer, void *context) {
   if (s_on_title_screen) {
     s_on_title_screen = false;
     s_in_beginning_stage = true;
+    bird_flap(s_bird);
 
     s_beginning_stage_time = app_timer_register(4000, s_exit_no_tube_stage, NULL);
   } else {
