@@ -1,9 +1,9 @@
 #include <pebble.h>
-#include "bird.h"
-#include "title.h"
-#include "tube.h"
-#include "ground.h"
-#include "score.h"
+#include "bird/bird.h"
+#include "title/title.h"
+#include "tube/tube.h"
+#include "ground/ground.h"
+#include "score/score.h"
 
 #define SCORE_PERSIST_KEY (42)
 
